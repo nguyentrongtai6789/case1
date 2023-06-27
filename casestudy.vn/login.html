@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        #tab1 {
+            position: absolute;
+            top: 100px;
+            width: 100%;
+            color: white;
+        }
+        img {
+            width: 100%;
+        }
+        #td1 {
+            width: 350px;
+        }
+        #td3 {
+            width: 300px;
+        }
+        #btlg {
+            position: absolute;
+            top: 200px;
+            color: black;
+            left: 800px;
+        }
+    </style>
+</head>
+<body>
+<img src="anhdangnhap.jpg">
+<table id="tab1">
+    <tr id="tr1">
+        <td id="td1"></td>
+        <td id="td2">
+            <form >
+            <table style="width: 100%">
+                <tr>
+                    <td colspan="2" style="text-align: center">NHẬP THÔNG TIN ADMIN</td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ email:</td>
+                    <td style="text-align: center"><input type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <td>Mật khẩu:</td>
+                    <td style="text-align: center"><input type="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td>Số điện thoại:</td>
+                    <td style="text-align: center"><input type="text" id="phone"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center"><button type="reset">Nhập lại</button><button type="button" onclick="kiemtra()">Đăng nhập</button></td>
+                </tr>
+            </table>
+            </form>
+        </td>
+        <td id="td3"></td>
+    </tr>
+</table>
+</body>
+<script>
+    function kiemtra() {
+        let a = document.getElementById("name").value;
+        let b = document.getElementById("password").value;
+        let c = document.getElementById("phone").value;
+        if (a==="undefined"&&b==="6789"&&c==="0369911511") {
+            location.href = "trangNguoiDung.html"
+        }
+        else {alert("Thông tin không đúng nha mày!")}
+        window.localStorage.setItem('username',a);
+    }
+
+</script>
+<script src="trangNguoiDung.js"></script>
+</html>

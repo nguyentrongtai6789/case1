@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+  </style>
+</head>
+<body>
+  <table>
+    <tr><td>Nhập tên tài khoản ngân hàng:</td><td><input type="text" id="bank"></td></tr>
+    <tr><td>Nhập mật khẩu:</td><td><input type="password" id="mkbank"></td></tr>
+    <tr><td>Nhập số tiền muốn nạp:</td><td><input type="number" id="sotienbank"></td></tr>
+    <tr><td><button  onclick="naptienxx()">NẠP TIỀN</button></td></tr>
+  </table>
+</body>
+<script>
+    function naptienxx() {
+        let a = document.getElementById('bank').value;
+        let b = document.getElementById('mkbank').value;
+        let c = document.getElementById('sotienbank'.value);
+        if (a==="1400141228007"&&b==="6789") {
+            location.href = "trangNguoiDung.html"
+        }
+        else {alert("Thông tin không đúng nha mày!")}
+        window.localStorage.setItem('sotiennap',c);
+    }
+</script>
+</html>

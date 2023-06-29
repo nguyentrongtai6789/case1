@@ -6,14 +6,11 @@ function lienhe() {
         "<br>Mô Hình Cao Cấp  là đơn vị tiên phong trong lĩnh vực kinh doanh mô hình figure tại Việt Nam," +
         "đặc biệt là dòng mô hình Transformers oversize.Là đại lý duy nhất của 52toys, và có quan hệ hợp tác với nhiều thương hiệu sản xuất mô hình khác."
 }
-function checkAdmin() {
-    document.getElementById('tentaikhoan')
-}
 function trangchu() {
-    hinhAnh(arr)
+    hinhAnhDangXuat(arr)
 }
 let name = window.localStorage.getItem('username');
-function hinhAnh(array) {
+function hinhAnhDangXuat(array) {
     let data = "";
     data += "<table>";
     data +="</tr>";
